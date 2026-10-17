@@ -20,9 +20,7 @@ function availableFor(date){
   const base=Date.UTC(y,m-1,d);
   const tomorrow=new Date(base+86400000).toISOString().slice(0,10);
   if(date===tomorrow){
-    const reference=Date.UTC(2026,9,17);
-    const elapsedDays=Math.round((base-reference)/86400000);
-    return new Set(elapsedDays%2===0?['09:00','12:00']:['14:00','16:00']);
+    return new Set(['09:00','12:00','14:00','16:00']);
   }
   const seed=date.split('-').reduce((n,v)=>Math.imul(n^Number(v),16777619)>>>0,2166136261);let state=seed;function next(){state=(Math.imul(state,1664525)+1013904223)>>>0;return state/4294967296}function pick(pool){const a=[...pool];for(let i=a.length-1;i>0;i--){const j=Math.floor(next()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a.slice(0,2)}return new Set([...pick(['08:00','09:00','10:00','11:00']),...pick(['13:00','14:00','15:00','16:00','17:00','18:00'])])}
 function isPast(d,h){if(d!==today())return false;const time=new Intl.DateTimeFormat('en-GB',{timeZone:'America/Sao_Paulo',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).format(new Date());return h<=time}
