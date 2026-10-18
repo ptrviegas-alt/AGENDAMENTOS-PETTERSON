@@ -1,37 +1,290 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#071d56"><title>Petterson Viegas | Agendamento</title><style>
-:root{font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;color:#142a53;background:#f5f8fe}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0}button,input{font:inherit}button{cursor:pointer}a{text-decoration:none}header{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid #e7edf7}.top{max-width:1100px;margin:auto;padding:16px 20px;display:flex;justify-content:space-between;align-items:center;gap:12px}.brand{font-size:18px;font-weight:900;color:#0b2b71}.brand small{display:block;font-size:9px;letter-spacing:2px}.btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:15px;padding:14px 20px;background:#075af4;color:white;font-weight:750;box-shadow:0 8px 25px #075af429}.btn:disabled{opacity:.5}.hero{background:radial-gradient(ellipse at 80% 10%,#1859ef,transparent 50%),linear-gradient(120deg,#041337,#082e84 70%,#0747ce);color:white}.hero-inner{max-width:1100px;margin:auto;padding:68px 22px;display:grid;grid-template-columns:1.4fr .6fr;gap:35px;align-items:center}.pill{display:inline-block;padding:9px 14px;border:1px solid #7cb0ff77;border-radius:99px;color:#d7ebff;font-size:12px;font-weight:800;letter-spacing:1px}.hero h1{font-size:clamp(36px,5vw,60px);line-height:1.08;letter-spacing:-2px;margin:22px 0}.hero h1 em{font-style:normal;color:#86cbff}.hero p{color:#e2edff;line-height:1.7;font-size:17px}.tiles{display:grid;gap:12px}.tile{border:1px solid #ffffff33;background:#ffffff12;border-radius:20px;padding:20px;font-weight:650}.benefits{max-width:1100px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:14px;padding:22px}.benefit{background:white;border-radius:17px;padding:18px;font-size:13px;font-weight:750}.booking{max-width:920px;margin:auto;padding:50px 17px 80px}.center{text-align:center}.kicker{font-size:11px;letter-spacing:1px;font-weight:850;color:#075af4}.booking h2{font-size:clamp(27px,4vw,39px);letter-spacing:-1px;margin:12px 0}.sub{color:#677995;line-height:1.6}.dates{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;margin:30px 0 18px}.date{border:1px solid #dfe8f7;border-radius:15px;background:white;padding:14px 4px;color:#183a70;font-weight:800;min-height:74px}.date small{display:block;color:#7688a5;margin-top:7px}.date.active{background:#075af4;border-color:#075af4;color:white}.date.active small{color:#dceaff}.panel{background:white;border:1px solid #e6edf9;border-radius:25px;padding:24px;box-shadow:0 15px 40px #163b770a}.panel-head{display:flex;justify-content:space-between;align-items:center;gap:8px}.panel-head h3{margin:0;font-size:17px}.panel-head span{color:#657996;font-size:12px}.slots{display:flex;flex-direction:column;gap:9px;max-height:400px;overflow-y:auto;margin-top:19px;padding-right:5px}.slot{display:flex;justify-content:space-between;align-items:center;width:100%;border:1px solid #d7e8ff;border-radius:15px;padding:17px;background:#eef6ff;color:#0a418f;font-weight:800}.slot:disabled{background:#f6f7f9;border-color:#edf0f4;color:#a1acba;cursor:not-allowed}.slot small{font-weight:650}.hint{font-size:13px;color:#617594;line-height:1.6}.foot{background:#071d56;color:white;text-align:center;padding:30px 20px}.foot a{color:#acd5ff}dialog{border:0;padding:0;background:transparent;max-width:450px;width:calc(100% - 26px);max-height:calc(100dvh - 20px);overflow:auto}dialog::backdrop{background:#031633ad;backdrop-filter:blur(4px)}.modal{background:white;padding:25px;border-radius:25px}.modal h3{margin:0 0 7px}.modal p{color:#637693;font-size:13px}.modal label{display:block;font-weight:750;font-size:13px;margin:14px 0 7px}.modal input{display:block;width:100%;padding:13px;border-radius:12px;border:1px solid #d7e1f1;font-size:16px}.actions{display:flex;gap:10px;margin-top:20px}.actions>*{flex:1}.ghost{border:1px solid #dfe6f3;border-radius:14px;background:#f6f8fc;padding:13px;font-weight:750;color:#23416d}.error{color:#ad2637!important;min-height:17px}.overlay{display:none;position:fixed;inset:0;z-index:30;background:#061735bc;align-items:center;justify-content:center;padding:15px}.overlay.visible{display:flex}.receipt-card{position:relative;z-index:2;background:white;width:min(100%,430px);border-radius:28px;padding:28px;text-align:center;box-shadow:0 30px 80px #00163155}.check{width:72px;height:72px;border-radius:50%;background:#e8f7ef;color:#138753;display:grid;place-items:center;font-size:40px;margin:0 auto 12px}.receipt-card h2{margin:8px 0;color:#0b2b71}.receipt{background:#f3f7fd;border-radius:15px;padding:15px;text-align:left;line-height:1.9;margin:20px 0;font-size:14px}.receipt-card .btn{width:100%;margin:5px 0}.receipt-card .ghost{width:100%;margin-top:7px}.confetti{position:fixed;inset:0;z-index:1;pointer-events:none;overflow:hidden}.piece{position:absolute;top:-20px;width:7px;height:12px;border-radius:2px;animation:fall var(--duration) linear var(--delay) forwards}@keyframes fall{to{transform:translate(var(--drift),105vh) rotate(600deg);opacity:0}}.small{font-size:12px;color:#6d7f98}.admin-link{font-size:12px;opacity:.8}.hidden{display:none!important}@media(max-width:750px){.hero-inner{display:block;padding:54px 22px}.tiles{margin-top:30px;grid-template-columns:1fr 1fr}.tile{font-size:12px;padding:14px}.benefits{grid-template-columns:1fr 1fr}.dates{gap:4px}.date{font-size:11px;border-radius:11px;padding:10px 1px;min-height:65px}.date small{font-size:9px}.panel{padding:17px}.brand{font-size:15px}.top .btn{font-size:12px;padding:11px}.panel-head span{font-size:10px}}@media(max-width:370px){.dates{grid-template-columns:repeat(4,1fr)}.tiles{grid-template-columns:1fr}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important}}
-</style></head><body>
-<header><div class="top"><a href="#inicio" class="brand">⌂ PETTERSON VIEGAS<small>CONSULTOR IMOBILIÁRIO</small></a><a class="btn" href="#agenda">Agendar agora →</a></div></header>
-<main><section id="inicio" class="hero"><div class="hero-inner"><div><span class="pill">MINHA CASA MINHA VIDA</span><h1>Sua casa própria está mais perto do que <em>você imagina.</em></h1><p>Agende seu atendimento com <strong>Petterson Viegas</strong> e receba orientação para conquistar seu imóvel com tranquilidade e segurança.</p><a class="btn" href="#agenda">Escolher meu horário →</a></div><div class="tiles"><div class="tile">⌂ Atendimento personalizado</div><div class="tile">✓ Orientação imobiliária</div><div class="tile">▤ Suporte em cada etapa</div><div class="tile">◇ Agendamento rápido</div></div></div></section>
-<div class="benefits"><div class="benefit">✓ Atendimento humanizado</div><div class="benefit">⌂ Minha Casa Minha Vida</div><div class="benefit">▤ Agende pelo celular</div></div>
-<section class="booking" id="agenda"><div class="center"><span class="kicker">AGENDE SEU ATENDIMENTO</span><h2>Escolha o melhor dia e horário</h2><p class="sub">Toque no dia e role a lista para encontrar um horário disponível.</p></div><div class="dates" id="dates"></div><div class="panel"><div class="panel-head"><h3 id="dayTitle">Horários</h3><span>● Agenda atualizada</span></div><div class="slots" id="slots"></div><p id="status" class="hint" role="status">Carregando horários...</p><p class="small">Azul: disponível · Cinza: indisponível</p></div></section></main>
-<footer class="foot"><strong>Seu novo começo começa aqui.</strong><p>Petterson Viegas · Consultor Imobiliário</p><p><a href="https://www.instagram.com/pettersonviegas1/" target="_blank" rel="noopener">Instagram</a> · <a class="admin-link" href="admin.html">Área administrativa</a></p></footer>
-<dialog id="modal"><form id="form" class="modal"><h3>Confirmar atendimento</h3><p id="chosen"></p><label for="name">Nome completo</label><input id="name" required minlength="2" maxlength="90" autocomplete="name"><label for="phone">Seu WhatsApp</label><input id="phone" required minlength="8" maxlength="25" autocomplete="tel" inputmode="tel" placeholder="(61) 99999-9999"><label for="interest">Empreendimento de interesse (opcional)</label><input id="interest" maxlength="100" placeholder="Qual imóvel você procura?"><p id="formStatus" class="error" role="status"></p><div class="actions"><button type="button" id="cancel" class="ghost">Voltar</button><button id="submit" class="btn" type="submit">Confirmar</button></div></form></dialog>
-<div id="success" class="overlay" role="dialog" aria-modal="true" aria-labelledby="successTitle" aria-hidden="true"><div class="confetti" id="confetti"></div><div class="receipt-card"><div class="check">✓</div><h2 id="successTitle">Parabéns!</h2><p>Seu horário está agendado com sucesso!</p><div class="receipt"><div>📅 <strong id="successDate"></strong></div><div>◷ <strong id="successTime"></strong></div><div>⌂ <strong id="successInterest"></strong></div></div><a id="whatsapp" class="btn" target="_blank" rel="noopener">Enviar confirmação pelo WhatsApp ↗</a><button id="calendar" class="ghost" type="button">Adicionar ao calendário</button><button id="successClose" class="ghost" type="button">Concluir</button><p class="small">O WhatsApp abre com o texto pronto. Toque em Enviar para concluir a mensagem.</p></div></div>
-<script>
-const BASE='https://gvkltxpcgclardsrwhrr.supabase.co',KEY='sb_publishable_DC8aiVgjo7ngaMxwy8XEcw_5LQN4MO3',WHATSAPP='5561982278667';
-const $=id=>document.getElementById(id),week=['DOM','SEG','TER','QUA','QUI','SEX','SÁB'],hours=['08:00','09:00','10:00','11:00','12:00','13:00','14:00','15:00','16:00','17:00','18:00'];
-let dates=[],day='',busy=new Set(),loading=true,selected=null,seq=0,lastReservation=null;
-function today(){const p=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Sao_Paulo',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date());const o=Object.fromEntries(p.map(v=>[v.type,v.value]));return `${o.year}-${o.month}-${o.day}`}
-function dateList(){const [y,m,d]=today().split('-').map(Number),base=Date.UTC(y,m-1,d);dates=Array.from({length:7},(_,i)=>new Date(base+i*86400000).toISOString().slice(0,10));if(!dates.includes(day))day=dates[0]}
-function pretty(d){return d.split('-').reverse().join('/')}function weekday(d){const [y,m,dd]=d.split('-').map(Number);return week[new Date(Date.UTC(y,m-1,dd)).getUTCDay()]}
-function availableFor(date){
-  const [y,m,d]=today().split('-').map(Number);
-  const base=Date.UTC(y,m-1,d);
-  const tomorrow=new Date(base+86400000).toISOString().slice(0,10);
-  if(date===tomorrow){
-    return new Set(['09:00','12:00','14:00','16:00']);
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Agendamento de Visitas</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont,
+    "SF Pro Display", "Segoe UI", sans-serif;
+  background: linear-gradient(
+    145deg,
+    #f5f5f7,
+    #e8edf5,
+    #ffffff
+  );
+  color: #1d1d1f;
+}
+
+.container {
+  max-width: 520px;
+  margin: 60px auto;
+  padding: 24px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.header h1 {
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -1.2px;
+}
+
+.header p {
+  color: #86868b;
+  font-size: 16px;
+}
+
+.card {
+  background: rgba(255,255,255,0.72);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255,255,255,0.85);
+  border-radius: 28px;
+  padding: 28px;
+  box-shadow: 0 15px 45px rgba(0,0,0,0.06);
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+input {
+  width: 100%;
+  padding: 16px;
+  border-radius: 14px;
+  border: 1px solid #d2d2d7;
+  background: #f5f5f7;
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+
+.horarios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.horario {
+  border: 1px solid #e5e5ea;
+  background: rgba(255,255,255,0.8);
+  border-radius: 14px;
+  padding: 15px 5px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.horario:hover:not(:disabled) {
+  background: #e8f0ff;
+}
+
+.horario.selecionado {
+  background: #007aff;
+  color: white;
+  border-color: #007aff;
+}
+
+.horario:disabled {
+  background: #e5e5e5;
+  color: #999;
+  cursor: not-allowed;
+}
+
+.confirmar {
+  width: 100%;
+  border: none;
+  border-radius: 16px;
+  padding: 18px;
+  background: #007aff;
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.confirmar:hover {
+  background: #0066d6;
+}
+
+.mensagem {
+  margin-top: 18px;
+  text-align: center;
+  font-size: 14px;
+  color: #248a3d;
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin: 25px auto;
+    padding: 16px;
   }
-  const seed=date.split('-').reduce((n,v)=>Math.imul(n^Number(v),16777619)>>>0,2166136261);let state=seed;function next(){state=(Math.imul(state,1664525)+1013904223)>>>0;return state/4294967296}function pick(pool){const a=[...pool];for(let i=a.length-1;i>0;i--){const j=Math.floor(next()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a.slice(0,2)}return new Set([...pick(['08:00','09:00','10:00','11:00']),...pick(['13:00','14:00','15:00','16:00','17:00','18:00'])])}
-function isPast(d,h){if(d!==today())return false;const time=new Intl.DateTimeFormat('en-GB',{timeZone:'America/Sao_Paulo',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).format(new Date());return h<=time}
-function render(){const tabs=$('dates');tabs.replaceChildren();dates.forEach((d,i)=>{const b=document.createElement('button');b.type='button';b.className='date'+(d===day?' active':'');b.setAttribute('aria-pressed',String(d===day));b.textContent=i===0?'Hoje':i===1?'Amanhã':weekday(d);const small=document.createElement('small');small.textContent=pretty(d).slice(0,5);b.append(small);b.onclick=()=>{day=d;render()};tabs.append(b)});$('dayTitle').textContent=weekday(day)+' · '+pretty(day);const list=$('slots');list.replaceChildren();const allowed=availableFor(day);hours.forEach(h=>{const ok=allowed.has(h)&&!busy.has(day+'|'+h)&&!isPast(day,h);const b=document.createElement('button');b.type='button';b.className='slot';b.disabled=loading||!ok;const a=document.createElement('span');a.textContent='◷  '+h;const t=document.createElement('small');t.textContent=loading?'Consultando...':ok?'Selecionar →':'Indisponível';b.append(a,t);if(ok&&!loading)b.onclick=()=>{selected={date:day,hour:h};$('chosen').textContent=pretty(day)+' às '+h;$('formStatus').textContent='';$('modal').showModal()};list.append(b)})}
-async function rpc(name,payload){const r=await fetch(BASE+'/rest/v1/rpc/'+name,{method:'POST',headers:{apikey:KEY,'Content-Type':'application/json'},body:JSON.stringify(payload)});if(!r.ok)throw Error('HTTP '+r.status+' '+(await r.text()).slice(0,300));return r.json()}
-async function refresh(){const n=++seq;dateList();loading=true;render();$('status').textContent='Consultando horários...';try{const rows=await rpc('horarios_ocupados',{inicio:dates[0],fim:dates[6]});if(n!==seq)return;busy=new Set(rows.map(r=>r.data+'|'+String(r.horario).slice(0,5)));loading=false;$('status').textContent='Escolha um horário disponível.';render()}catch(e){if(n!==seq)return;console.error(e);$('status').textContent='Não foi possível carregar a agenda. Atualize a página.';loading=true;render()}}
-function confetti(){const box=$('confetti');box.replaceChildren();if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;const colors=['#075af4','#82c7ff','#dceeff','#ffffff'];for(let i=0;i<42;i++){const e=document.createElement('span');e.className='piece';e.style.left=Math.random()*100+'%';e.style.background=colors[i%4];e.style.setProperty('--drift',(Math.random()-.5)*180+'px');e.style.setProperty('--duration',2+Math.random()*2+'s');e.style.setProperty('--delay',Math.random()*.5+'s');box.append(e)}setTimeout(()=>box.replaceChildren(),4500)}
-function ics(info){const [y,m,d]=info.date.split('-');const stamp=y+m+d+'T'+info.hour.replace(':','')+'00';const endHour=String(Number(info.hour.slice(0,2))+1).padStart(2,'0');const end=y+m+d+'T'+endHour+info.hour.slice(3)+'00';const lines=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Petterson Viegas//Agenda//PT-BR','BEGIN:VEVENT','UID:'+crypto.randomUUID()+'@pettersonviegas','DTSTAMP:'+new Date().toISOString().replace(/[-:]/g,'').replace(/\.\d{3}/,''),'DTSTART;TZID=America/Sao_Paulo:'+stamp,'DTEND;TZID=America/Sao_Paulo:'+end,'SUMMARY:Atendimento com Petterson Viegas','DESCRIPTION:Empreendimento: '+(info.interest||'Não informado').replace(/[\n\r,;]/g,' '),'END:VEVENT','END:VCALENDAR'];const blob=new Blob([lines.join('\r\n')],{type:'text/calendar;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='agendamento-petterson.ics';a.click();setTimeout(()=>URL.revokeObjectURL(url),2000)}
-function showSuccess(info){lastReservation=info;$('successDate').textContent=pretty(info.date);$('successTime').textContent=info.hour;$('successInterest').textContent=info.interest||'Atendimento imobiliário';$('success').classList.add('visible');$('success').setAttribute('aria-hidden','false');$('successClose').focus();confetti()}
-function closeSuccess(){$('success').classList.remove('visible');$('success').setAttribute('aria-hidden','true');$('confetti').replaceChildren()}
-$('successClose').onclick=closeSuccess;$('cancel').onclick=()=>$('modal').close();$('calendar').onclick=()=>{if(lastReservation)ics(lastReservation)};
-$('form').onsubmit=async e=>{e.preventDefault();if(!selected)return;const btn=$('submit'),msg=$('formStatus');btn.disabled=true;msg.textContent='Confirmando reserva...';const name=$('name').value.trim(),phone=$('phone').value.trim(),interest=$('interest').value.trim(),info={...selected,name,phone,interest};try{const result=await rpc('reservar_horario',{p_data:info.date,p_horario:info.hour,p_nome:name,p_telefone:phone,p_empreendimento:interest||null});if(result!==true){msg.textContent='Esse horário não pôde ser reservado. Escolha outro horário.';await refresh();return}busy.add(info.date+'|'+info.hour);$('modal').close();$('form').reset();render();const text=`Olá, Petterson! Acabei de reservar um atendimento.\nNome: ${name}\nData: ${pretty(info.date)}\nHorário: ${info.hour}\nEmpreendimento: ${interest||'Não informado'}\nWhatsApp: ${phone}\n\nMeu agendamento foi confirmado pelo site.`;const url='https://wa.me/'+WHATSAPP+'?text='+encodeURIComponent(text);$('whatsapp').href=url;showSuccess(info);refresh();/* Abertura após ação do usuário: alguns navegadores bloqueiam novas abas assíncronas. */const opened=window.open(url,'_blank','noopener');if(!opened)$('whatsapp').focus()}catch(err){console.error(err);msg.textContent='Não foi possível confirmar. Tente novamente.'}finally{btn.disabled=false}};
-refresh();setInterval(()=>{if(!$('modal').open&&!$('success').classList.contains('visible'))refresh()},30000);
-</script></body></html>
+
+  .header h1 {
+    font-size: 29px;
+  }
+
+  .card {
+    padding: 22px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="header">
+    <h1>Agende sua visita.</h1>
+    <p>Uma experiência simples e exclusiva.</p>
+  </div>
+
+  <div class="card">
+
+    <label for="nome">Seu nome</label>
+    <input
+      type="text"
+      id="nome"
+      placeholder="Digite seu nome"
+      maxlength="100"
+    >
+
+    <label for="data">Escolha uma data</label>
+    <input type="date" id="data">
+
+    <label>Horários disponíveis</label>
+
+    <div class="horarios" id="horarios"></div>
+
+    <button class="confirmar" onclick="agendar()">
+      Confirmar agendamento
+    </button>
+
+    <div class="mensagem" id="mensagem"></div>
+
+  </div>
+</div>
+
+<script>
+const horarios = [
+  "09:00", "10:00", "11:00",
+  "13:00", "14:00", "15:00",
+  "16:00", "17:00", "18:00"
+];
+
+let horarioSelecionado = null;
+
+const dataInput = document.getElementById("data");
+const horariosDiv = document.getElementById("horarios");
+const mensagem = document.getElementById("mensagem");
+
+// Impede a seleção de datas anteriores a hoje.
+function dataLocal() {
+  const agora = new Date();
+  const ano = agora.getFullYear();
+  const mes = String(agora.getMonth() + 1).padStart(2, "0");
+  const dia = String(agora.getDate()).padStart(2, "0");
+
+  return `${ano}-${mes}-${dia}`;
+}
+
+dataInput.min = dataLocal();
+
+function chaveAgendamento(data, horario) {
+  return `agendamento_${data}_${horario}`;
+}
+
+function carregarHorarios() {
+  horariosDiv.innerHTML = "";
+  horarioSelecionado = null;
+  mensagem.textContent = "";
+
+  const data = dataInput.value;
+
+  if (!data) return;
+
+  horarios.forEach(horario => {
+    const botao = document.createElement("button");
+    botao.className = "horario";
+    botao.textContent = horario;
+    botao.type = "button";
+
+    const ocupado = localStorage.getItem(
+      chaveAgendamento(data, horario)
+    );
+
+    if (ocupado) {
+      botao.disabled = true;
+      botao.textContent = `${horario} ✓`;
+    } else {
+      botao.onclick = () => {
+        document.querySelectorAll(".horario")
+          .forEach(b => b.classList.remove("selecionado"));
+
+        botao.classList.add("selecionado");
+        horarioSelecionado = horario;
+      };
+    }
+
+    horariosDiv.appendChild(botao);
+  });
+}
+
+function agendar() {
+  const nome = document.getElementById("nome").value.trim();
+  const data = dataInput.value;
+
+  if (!nome || !data || !horarioSelecionado) {
+    alert("Preencha seu nome, a data e o horário.");
+    return;
+  }
+
+  if (data < dataLocal()) {
+    alert("Selecione uma data válida.");
+    return;
+  }
+
+  const chave = chaveAgendamento(data, horarioSelecionado);
+
+  if (localStorage.getItem(chave)) {
+    alert("Este horário já está ocupado.");
+    carregarHorarios();
+    return;
+  }
+
+  const horarioConfirmado = horarioSelecionado;
+
+  localStorage.setItem(chave, JSON.stringify({
+    nome: nome,
+    data: data,
+    horario: horarioConfirmado
+  }));
+
+  carregarHorarios();
+
+  mensagem.textContent =
+    `Visita confirmada para ${data} às ${horarioConfirmado}!`;
+}
+
+dataInput.addEventListener("change", carregarHorarios);
+</script>
+
+</body>
+</html>
